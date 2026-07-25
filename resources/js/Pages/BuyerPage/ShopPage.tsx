@@ -9,9 +9,9 @@ import {
 
 import { useState, useEffect, useCallback, useRef } from "react";
 
-import { Footer } from "@/Components/Ui/Footer";
-import { Navbar } from "@/Components/Ui/Navbar";
-import { ProductCard } from "@/Components/BuyerPage/ShopPage/ProductCard";
+import Footer from "@/Components/Ui/Footer";
+import Navbar from "@/Components/Ui/Navbar";
+import { ProductCard } from "@/Components/Ui/ProductCard";
 import { MobileSortModal } from "@/Components/BuyerPage/ShopPage/MobileSortModal";
 import { MobileFilterModal } from "@/Components/BuyerPage/ShopPage/MobileFilterModal";
 
