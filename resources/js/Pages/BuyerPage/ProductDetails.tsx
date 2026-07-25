@@ -17,8 +17,8 @@ import axios from "axios";
 import Swal from "sweetalert2";
 
 // Import your existing components
-import { Navbar } from "@/Components/Ui/Navbar";
-import { Footer } from "@/Components/Ui/Footer";
+import Navbar from "@/Components/Ui/Navbar";
+import Footer from "@/Components/Ui/Footer";
 import { MobileVariantsPanel } from "@/Components/BuyerPage/ProductDetails/MobileVariantsPanel";
 import { ShowReviewModal } from "@/Components/BuyerPage/ProductDetails/ShowReviewModal";
 import { ShowZoomModal } from "@/Components/BuyerPage/ProductDetails/ShowZoomModal";
