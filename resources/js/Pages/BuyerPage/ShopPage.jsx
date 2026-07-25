@@ -9,11 +9,13 @@ import {
 
 import { useState, useEffect, useCallback, useRef } from "react";
 
-import { Footer } from "@/Components/Ui/Footer";
-import { Navbar } from "@/Components/Ui/Navbar";
-import { ProductCard } from "@/Components/BuyerPage/ShopPage/ProductCard";
+import Footer from "@/Components/Ui/Footer";
+import Navbar from "@/Components/Ui/Navbar";
+import { ProductCard } from "@/Components/Ui/ProductCard";
 import { MobileSortModal } from "@/Components/BuyerPage/ShopPage/MobileSortModal";
 import { MobileFilterModal } from "@/Components/BuyerPage/ShopPage/MobileFilterModal";
+import { Button } from "@/Components/Ui/Button";
+import SearchBar from "@/Components/Ui/SearchBar";
 
 export default function ShopPage({ list_shoppingItem, list_categoryItem }) {
     const [priceRange, setPriceRange] = useState([0, 1000]);
@@ -660,12 +662,11 @@ export default function ShopPage({ list_shoppingItem, list_categoryItem }) {
                                     </p>
                                 </div>
                                 <div className="flex-row">
-                                    <button
-                                        type="button"
-                                        className="p-2 mr-4 rounded-lg text-white text-sm bg-green-500 hover:bg-green-600 transition-colors"
-                                    >
-                                        Visual Search
-                                    </button>
+                                    <Button
+                                        buttonText="Visual Search"
+                                        variant="successSoft"
+                                        className="mr-2"
+                                    />
                                     <select
                                         value={sortBy}
                                         onChange={(e) =>
