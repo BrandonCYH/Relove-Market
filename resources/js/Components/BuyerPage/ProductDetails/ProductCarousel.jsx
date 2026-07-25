@@ -4,7 +4,7 @@ import Carousel from "react-multi-carousel";
 
 import "react-multi-carousel/lib/styles.css";
 
-import { ProductCard } from "@/Components/BuyerPage/ShopPage/ProductCard";
+import { ProductCard } from "@/Components/Ui/ProductCard";
 
 export function ProductCarousel({ products = [], title, save_wishlist }) {
     const items = Array.isArray(products) ? products : [];
